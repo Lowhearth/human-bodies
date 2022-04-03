@@ -1,0 +1,10 @@
+.gallery-card {
+}
+.gallery-card-img {
+}
+.gallery-card-title {
+}
+.gallery-card-title-container {
+  display: flex;
+  justify-content: flex-end;
+}

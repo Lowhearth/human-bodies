@@ -1,0 +1,19 @@
+.gallery-title {
+  margin-left: 150px;
+}
+
+.gallery-items-container {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1000px;
+}
+.gallery {
+  overflow-y: auto;
+}

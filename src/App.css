@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Neue"; /*Can be any text*/
+  src: local("Neue"),
+    url("./assets/fonts/helveticaneue/HelveticaNeueLTPro-Bd.otf")
+      format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue"; /*Can be any text*/
+  src: local("Neue"),
+    url("./assets/fonts/helveticaneue/HelveticaNeueLTPro-Th.otf")
+      format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue"; /*Can be any text*/
+  src: local("Neue"),
+    url("./assets/fonts/helveticaneue/HelveticaNeueLTPro-Md.otf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Neue";
+  letter-spacing: 2px;
+  font-weight: 100;
+  background-color: #000000;
+  color: white;
+}
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}

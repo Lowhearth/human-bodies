@@ -1,0 +1,14 @@
+.search-bar-input {
+  color: white;
+  font-weight: 300;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid gainsboro;
+  outline: none;
+}
+
+.search-bar-input:focus {
+  color: white;
+  font-weight: 300;
+  border-radius: 0;
+}

@@ -1,0 +1,19 @@
+.top-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px gainsboro;
+}
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 60px;
+}
+.top-bar-left {
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  margin-left: 40px;
+}

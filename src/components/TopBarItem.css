@@ -1,0 +1,9 @@
+.top-bar-item {
+  width: 180px;
+}
+.top-bar-item.small {
+  width: 120px;
+}
+.top-bar-item.huge {
+  width: 220px;
+}
