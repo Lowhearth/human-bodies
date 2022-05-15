@@ -1,0 +1,25 @@
+.human-body-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.human-body-preview {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+}
+
+.human-body-description {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 400px;
+  height: 600px;
+}
+.human-body-buy {
+  width: 400px;
+  height: 600px;
+}

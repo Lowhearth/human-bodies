@@ -1,14 +1,10 @@
 import GalleryCard from "../components/GalleryCard";
 import Title from "../components/Title";
 import { importAll } from "../utils/utils";
+import { Link } from "react-router-dom";
 import "./Gallery.css";
+import bodies from "../data/bodies"
 
-const galleryItems = importAll(
-  //@ts-ignore
-  require.context("../assets/img", false, /\.(png)$/)
-);
-const bodies: string[] = Object.values(galleryItems);
-console.log(galleryItems);
 
 const Gallery = () => {
   return (
@@ -18,9 +14,11 @@ const Gallery = () => {
       </div>
       <div className="gallery-items-container">
         <div className="gallery-items">
-          {bodies.map((imgPath, i) => {
+          {bodies.map(({id}, i) => {
             return (
-              <GalleryCard imgUrl={imgPath} title={`Body ${i}`}></GalleryCard>
+              <Link to={`/body/${i}`}>
+                <GalleryCard imgUrl={`human-bodies/img/${id}.png`} title={`Body ${i}`}></GalleryCard>
+              </Link>
             );
           })}
         </div>
