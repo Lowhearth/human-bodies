@@ -1,0 +1,11 @@
+Model Information:
+* title:	Hamster Remake
+* source:	https://sketchfab.com/3d-models/hamster-remake-c9433cb2268f497491a3dfb5bab1870e
+* author:	LuisMoraHe (https://sketchfab.com/LuisMoraHe)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Hamster Remake" (https://sketchfab.com/3d-models/hamster-remake-c9433cb2268f497491a3dfb5bab1870e) by LuisMoraHe (https://sketchfab.com/LuisMoraHe) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
