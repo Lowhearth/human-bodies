@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/human-bodies/static/css/main.b9372fb1.css",
-    "main.js": "/human-bodies/static/js/main.ff72ce5d.js",
+    "main.js": "/human-bodies/static/js/main.cbbb491f.js",
     "static/js/787.6dbcd2d2.chunk.js": "/human-bodies/static/js/787.6dbcd2d2.chunk.js",
     "static/media/HelveticaNeueLTPro-Th.otf": "/human-bodies/static/media/HelveticaNeueLTPro-Th.524094f2323cd049b6a6.otf",
     "static/media/HelveticaNeueLTPro-Md.otf": "/human-bodies/static/media/HelveticaNeueLTPro-Md.b1f24dd66a60d8de65aa.otf",
     "static/media/HelveticaNeueLTPro-Bd.otf": "/human-bodies/static/media/HelveticaNeueLTPro-Bd.16f0a8c9c7f2e37afd54.otf",
     "index.html": "/human-bodies/index.html",
     "main.b9372fb1.css.map": "/human-bodies/static/css/main.b9372fb1.css.map",
-    "main.ff72ce5d.js.map": "/human-bodies/static/js/main.ff72ce5d.js.map",
+    "main.cbbb491f.js.map": "/human-bodies/static/js/main.cbbb491f.js.map",
     "787.6dbcd2d2.chunk.js.map": "/human-bodies/static/js/787.6dbcd2d2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b9372fb1.css",
-    "static/js/main.ff72ce5d.js"
+    "static/js/main.cbbb491f.js"
   ]
 }
