@@ -1,8 +1,13 @@
 import { GoogleLogin } from 'react-google-login';
 
-export const Login: React.FC = () => {
+// const storeUser = async () => {
+//   const res = await fetch('localhost:4000/')
+// }
+
+export const Login = () => {
   const handleLogin = async (googleData: any) => {
-    const res = await fetch('/api/v1/auth/google', {
+    console.log(googleData);
+    const res = await fetch('http://localhost:4000/api/v1/auth/google', {
       method: 'POST',
       body: JSON.stringify({
         token: googleData.tokenId,
@@ -17,7 +22,9 @@ export const Login: React.FC = () => {
 
   return (
     <GoogleLogin
-      clientId={'rellenar con google id'}
+      clientId={
+        '643894233639-skca1e21pcijf4te8rvl2srjmc4167i6.apps.googleusercontent.com'
+      }
       buttonText="Log in with Google"
       onSuccess={handleLogin}
       onFailure={handleLogin}

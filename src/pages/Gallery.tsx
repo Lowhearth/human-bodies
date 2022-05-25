@@ -4,12 +4,10 @@ import { importAll } from '../utils/utils';
 import { Link } from 'react-router-dom';
 import './Gallery.css';
 import bodies from '../data/bodies';
-import { Login } from '../components/Login';
 
 const Gallery = () => {
   return (
     <section className="gallery">
-      <Login></Login>
       <div className="gallery-title">
         <Title text="human bodies"></Title>
       </div>
