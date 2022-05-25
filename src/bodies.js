@@ -1,0 +1,4 @@
+export const nfts = [
+  '0x160c404b2b49cbc3240055ceaee026df1e8497a0/1013',
+  '0x160c404b2b49cbc3240055ceaee026df1e8497a0/2163',
+];

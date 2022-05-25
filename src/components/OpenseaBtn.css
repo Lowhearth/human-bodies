@@ -1,0 +1,25 @@
+.opensea-cta-container {
+  margin-top: 30px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-left: 0.5px solid white;
+}
+
+.button-opensea {
+  margin-top: 10px;
+  border: none;
+  width: 180px;
+  color: white;
+  background-color: black;
+}
+
+.button-opensea:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.cta-text {
+  font-size: 14px;
+}

@@ -6,25 +6,28 @@ source: https://sketchfab.com/3d-models/hamster-remake-c9433cb2268f497491a3dfb5b
 title: Hamster Remake
 */
 
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import React, { useRef } from 'react';
+import { useGLTF } from '@react-three/drei';
 
 export default function Model({ ...props }) {
-  const group = useRef()
-  const { nodes, materials } = useGLTF('human-bodies/hamster_remake/scene.gltf')
+  const group = useRef();
+  const { nodes, materials } = useGLTF('hamster_remake/scene.gltf');
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[0, 0.15, 0]}>
             <primitive object={nodes.GLTF_created_0_rootJoint} />
-            <skinnedMesh geometry={nodes.Object_7.geometry} material={materials.Hamster} skeleton={nodes.Object_7.skeleton} />
+            <skinnedMesh
+              geometry={nodes.Object_7.geometry}
+              material={materials.Hamster}
+              skeleton={nodes.Object_7.skeleton}
+            />
           </group>
         </group>
       </group>
     </group>
-  )
+  );
 }
 
-
-useGLTF.preload('human-bodies/hamster_remake/scene.gltf')
+useGLTF.preload('hamster_remake/scene.gltf');
