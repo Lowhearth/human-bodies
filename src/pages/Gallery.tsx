@@ -1,10 +1,9 @@
-import GalleryCard from "../components/GalleryCard";
-import Title from "../components/Title";
-import { importAll } from "../utils/utils";
-import { Link } from "react-router-dom";
-import "./Gallery.css";
-import bodies from "../data/bodies"
-
+import GalleryCard from '../components/GalleryCard';
+import Title from '../components/Title';
+import { importAll } from '../utils/utils';
+import { Link } from 'react-router-dom';
+import './Gallery.css';
+import bodies from '../data/bodies';
 
 const Gallery = () => {
   return (
@@ -14,10 +13,14 @@ const Gallery = () => {
       </div>
       <div className="gallery-items-container">
         <div className="gallery-items">
-          {bodies.map(({id}, i) => {
+          {bodies.map(({ id }, i) => {
             return (
-              <Link to={`/body/${i}`}>
-                <GalleryCard imgUrl={`human-bodies/img/${id}.png`} title={`Body ${i}`}></GalleryCard>
+              <Link style={{ textDecoration: 'none' }} to={`/body/${i}`}>
+                <GalleryCard
+                  imgUrl={`img/${id}.png`}
+                  title={`Body ${i}`}
+                  price={100}
+                ></GalleryCard>
               </Link>
             );
           })}

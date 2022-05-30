@@ -19,7 +19,32 @@
   width: 400px;
   height: 600px;
 }
+.human-body-description div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .human-body-buy {
   width: 400px;
   height: 600px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.back-home-btn {
+  align-self: flex-start;
+  margin: 25px;
+  position: absolute;
+  top: 61px;
+  left: 0px;
+  border: none;
+  border-bottom: 0.5px solid white;
+  padding: 2px;
+}
+
+.back-home-btn:hover {
+  cursor: pointer;
 }

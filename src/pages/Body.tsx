@@ -1,9 +1,10 @@
-import { useParams } from "react-router";
-import GalleryCard from "../components/GalleryCard";
-import Title from "../components/Title";
-import { importAll } from "../utils/utils";
-import BodyPrev from "../components/BodyPrev";
-import "./Body.css";
+import { useParams, useNavigate } from 'react-router';
+import GalleryCard from '../components/GalleryCard';
+import Title from '../components/Title';
+import { importAll } from '../utils/utils';
+import BodyPrev from '../components/BodyPrev';
+import './Body.css';
+import { OpenseaBtn } from './../components/OpenseaBtn';
 
 type Props = {
   id?: string;
@@ -11,8 +12,12 @@ type Props = {
 
 const Body: React.FC<Props> = () => {
   let { id } = useParams();
+  const navigate = useNavigate();
   return (
     <section className="human-body-container">
+      <button className="back-home-btn" onClick={() => navigate('/')}>
+        Go back
+      </button>
       <div className="human-body-description">
         <div>
           <h2>Body {id}</h2>
@@ -38,8 +43,12 @@ const Body: React.FC<Props> = () => {
           V-neck dress with long balloon sleeves. Elastic waist. Ruffled hem.
           Tied fastening at the back.
         </div>
-        <br></br>
+
         <div>49.95 EUR</div>
+        <OpenseaBtn
+          openseaUrl="https://opensea.io/assets/0x160c404b2b49cbc3240055ceaee026df1e8497a0/9672"
+          bodyName={`"Body Name"`}
+        ></OpenseaBtn>
       </div>
     </section>
   );

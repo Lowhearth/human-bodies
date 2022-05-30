@@ -1,0 +1,45 @@
+.likes-counter-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.likes-counter-container:hover {
+  cursor: pointer;
+}
+
+.likes-counter-cyrcle {
+  width: 20px;
+  height: 2px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.like-button {
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+}
+.like-button::before {
+  color: #fff;
+  content: '♥';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.like-button::after {
+  font-size: 15px;
+  color: #ff3252;
+  content: '♥';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.1s;
+}
+.like-button.liked::after {
+  transform: translate(-50%, -50%);
+}
