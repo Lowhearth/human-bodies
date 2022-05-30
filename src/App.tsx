@@ -6,7 +6,6 @@ import Gallery from './pages/Gallery';
 import { useEffect } from 'react';
 import { fetchAssets } from './api/opensea';
 import { nfts } from './bodies';
-import { Login } from './components/Login';
 
 function App() {
   const buildAssetUrl = (address: string, token: string): string => {
@@ -31,7 +30,6 @@ function App() {
   return (
     <div className="App">
       <TopBar></TopBar>
-      <Login></Login>
       <Routes>
         <Route path="/" element={<Gallery></Gallery>} />
         <Route path="/body/:id" element={<Body />} />

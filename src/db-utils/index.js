@@ -8,3 +8,8 @@ export const login = async (user) => {
   });
   if (!response.ok) return 'user created';
 };
+
+export const getUserByEmail = async (email) => {
+  const response = await fetch(`http://localhost:4000/login/${email}`);
+  return await response.json();
+};

@@ -1,7 +1,8 @@
-import TopBarButton from "./TopBarButton";
-import SearchBar from "./SearchBar";
-import "./TopBar.css";
-import TopBarItem from "./TopBarItem";
+import TopBarButton from './TopBarButton';
+import SearchBar from './SearchBar';
+import './TopBar.css';
+import TopBarItem from './TopBarItem';
+import { Login } from './Login';
 
 const TopBar = () => {
   return (
@@ -11,9 +12,10 @@ const TopBar = () => {
         <TopBarItem size="huge">
           <SearchBar></SearchBar>
         </TopBarItem>
-        <TopBarItem size="small">
-          <TopBarButton text="LOG IN"></TopBarButton>
-        </TopBarItem>
+        {/* <TopBarItem size="small"> */}
+        <Login></Login>
+        {/* <TopBarButton text="LOG IN"></TopBarButton> */}
+        {/* </TopBarItem> */}
         <TopBarItem size="small">
           <TopBarButton text="HELP"></TopBarButton>
         </TopBarItem>
