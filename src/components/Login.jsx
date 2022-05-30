@@ -4,22 +4,16 @@ import jwtDecode from 'jwt-decode';
 import { login } from '../db-utils';
 import GoogleUserProfile from './GoogleUserProfile';
 
-type User = {
-  name: string;
-  email: string;
-  picture: string;
-  token: string;
-};
 
 export const Login = () => {
-  const [user, setUser] = useState<any>({});
+  const [user, setUser] = useState({});
 
-  const handleCallbackResponse = (res: any) => {
+  const handleCallbackResponse = (res) => {
     console.log(`Encoded JWT ID token: + ${res.credential}`);
-    const userObject: any = jwtDecode(res.credential);
+    const userObject = jwtDecode(res.credential);
     console.log(userObject);
     const { given_name, email, picture } = userObject;
-    const user: User = {
+    const user = {
       name: given_name,
       email,
       picture,
@@ -34,7 +28,7 @@ export const Login = () => {
   const handleSignOut = (e) => {
     e.preventDefault();
     localStorage.removeItem('email');
-    location.reload();
+    window.location.reload();
   };
 
   useEffect(() => {
